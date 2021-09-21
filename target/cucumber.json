@@ -1,0 +1,77 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-11T08:05:23.199Z",
+        "line": 42,
+        "name": "Fetch the most starred Github repositories and order the results decreasingly",
+        "description": "",
+        "id": "github-api-functionality-testcases;fetch-the-most-starred-github-repositories-and-order-the-results-decreasingly;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1012717000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "a user with \"mohannaresh\" requested github api service to get most starred github repos in decreasing order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mohannaresh\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.githubapi.test.StepDefinitions.a_user_with_requested_github_api_service_to_get_most_starred_github_repos_in_decreasing_order(String) in file:/Users/Gudimella.Naresh/Desktop/Mohan/githubapiprojectsample-main/target/test-classes/"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1444000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "validate that user got expected repos list based on number of stars",
+            "match": {
+              "location": "com.githubapi.test.StepDefinitions.validate_that_user_got_expected_repos_list_based_on_number_of_stars() in file:/Users/Gudimella.Naresh/Desktop/Mohan/githubapiprojectsample-main/target/test-classes/"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 736000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "validate that the api response for starred list of repos statuscode is \"200 OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200 OK\"",
+                  "offset": 71
+                }
+              ],
+              "location": "com.githubapi.test.StepDefinitions.validate_that_the_api_response_for_starred_list_of_repos_statuscode_is(String) in file:/Users/Gudimella.Naresh/Desktop/Mohan/githubapiprojectsample-main/target/test-classes/"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@EndToEndTest1"
+          }
+        ]
+      }
+    ],
+    "name": "GitHub API functionality testcases",
+    "description": "",
+    "id": "github-api-functionality-testcases",
+    "keyword": "Feature",
+    "uri": "classpath:features/githubAPITestcaseScenarios.feature",
+    "tags": []
+  }
+]
